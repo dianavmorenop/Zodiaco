@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<script src="js/index.js"></script> <!--Enlace con las funciones del menú lateral-->
+	</head>
+	<body class="opcionUno">
+        <div class="container">
+            <!--Menú lateral-->
+           <div class="menuLat">
+                <form action="" id="containerBotones">
+                    <img src="imagenes/home.png" onclick="cambiaIndex();"> <!--Cambia la página a index-->
+                    <button type="button" class="botones" onclick="cambiaOpcion1();">¿QUÉ SIGNO ERES?</button> <!--Cambia la página a la opción 1-->
+                    <button type="button" class="botones" onclick="cambiaOpcion2();">¿CÓMO ES MI SIGNO?</button> <!--Cambia la página a la opción 2-->
+                    <button type="button" class="botones" onclick="cambiaOpcion3();">¿ESTAREMOS JUNTOS?</button> <!--Cambia la página a la opción 2-->
+                </form>
+            </div>
+            <!--Información página op1-->
+            <div class="opUno">
+					<p>¿Qué signo soy?</p>
+					<div class="select">
+					  <select name="dia" id="selectDia">
+						<option value="">Día</option> <!--Lista desplegable #1-->  
+					  </select>
+					  <select name="mes" id="selectMes">
+						<option value="">Mes</option>  <!--Lista desplegable #2--> 
+					  </select>
+					</div>
+					<div class="resultado">
+					  <div class="calculaSigno" id="calculaSigno"></div> <!--Espacio donde se almacenará la información-->                   
+					</div>
+			</div>
+        <script src="js/opcion1.js"></script> <!--Enlace con las funciones de la página: opción 1-->
+    </body>
+</html>

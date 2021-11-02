@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <script src="js/index.js"></script> <!--Enlace con las funciones del menú lateral-->       
+	</head>
+	<body>
+        <div class="container">
+            <!--Menú lateral-->
+           <div class="menuLat">
+                <form action="" id="containerBotones">
+                    <img src="imagenes/home.png" onclick="cambiaIndex();"> <!--Cambia la página al indez--> 
+                    <button type="button" class="botones" onclick="cambiaOpcion1();">¿QUÉ SIGNO ERES?</button> <!--Cambia la página a la opción 1--> 
+                    <button type="button" class="botones" onclick="cambiaOpcion2();">¿CÓMO ES MI SIGNO?</button> <!--Cambia la página a la opción 2-->
+                    <button type="button" class="botones" onclick="cambiaOpcion3();">¿ESTAREMOS JUNTOS?</button> <!--Cambia la página a la opción 2-->
+                </form>
+            </div>
+            <!--Información página opción 3-->
+            <div class="opTres">
+                <p>¿Estaremos juntos?</p>
+                <div class="select">
+                    <select name="signo1" id="selectPrimerSigno">
+                        <option value="">Seleccione primer signo</option> <!--Lista desplegable #1--> 
+                    </select>
+                    <select name="signo2" id="selectSegundoSigno">
+                        <option value="">Seleccione segundo signo</option> <!--Lista desplegable #2--> 
+                    </select>
+                </div>
+                <div class="botono1">
+                   <img src="imagenes/heart.png" onclick="infoCompatibilidad()"> <!--Botón que realizará el cálculo--> 
+                </div>
+                <div class="resultado">
+                   <div class="infoSigno" id="infoSigno"></div>  <!--Espacio donde se almacenará la información-->                  
+                </div>
+           </div>
+       </div>
+       <script src="js/opcion3.js"></script> <!--Enlace con las funciones de la página: opción 3-->
+    </body>
+</html>

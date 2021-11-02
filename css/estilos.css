@@ -1,0 +1,308 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+/*------Fuentes utilizadas-------*/
+@font-face{
+  font-family:'Comic Boys';
+  src:url(../fuentes/ComicBoys.ttf);
+  font-family:'Spice Rice';
+  src:url(../fuentes/SpicyRice-Regular.otf);
+}
+/*------------------Estilos index------------------*/
+.index, .principal{
+    width: 100%;
+    min-height: 97vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.index{
+    background-image: url(../imagenes/index.jpg);
+}
+.parte1,.parte2, .parte3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.boton {
+    width: 400px;
+    height: 130px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    background-color: #7704E9;
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'Spice Rice';
+    opacity: 0.9;
+}
+/*------------------Estilos página principal------------------*/
+.principal{
+    background-image: url(../imagenes/pr.jpg);
+    padding-top:30px; 
+}
+.mprincipal{ /*Estilos menú lateral (solo página principal)*/
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    align-items: center;
+    height: max-content;
+}
+#containerBotones{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.mprincipal img{
+    width:100px; 
+    height: auto;
+}
+.botonp{
+    width: 200px;
+    height: 75px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(119, 4, 233, 0.7);
+    text-align: center;
+    font-family: 'Spice Rice';
+    margin-top:35px; 
+}
+.pagprincipal{ /*Estilos página principal*/
+    font-size: 30px;
+    position: absolute;
+    left: 36.5%;
+    color: white;
+    font-family: 'Comic Boys';
+}
+.box {
+  text-align: left;
+  position: relative;
+  border: 2px solid #7704E9;
+  border-radius: 30px;
+  width: 500px;
+  height: 280px;
+  padding: 5%;
+  background-color: rgba(119, 4, 233, 0.2); 
+}
+/*Estilos página ¿qué signo soy? (opción 1)*/
+.menuLat{ /*Estilos menú lateral (páginas opción 1,2,3)*/
+    display: flex;
+    width:20%;
+    height: 100vh;
+    background: url(../imagenes/menulat.jpg);   
+    position: fixed;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menuLat img{
+    width:100px; 
+    height: auto;
+}
+.botones{
+    width: 200px;
+    height: 75px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(119, 4, 233, 0.7);
+    text-align: center;
+    font-family: 'Spice Rice';
+    margin-top:35px; 
+}
+.opUno, .opDos, .opTres{ /*Estilos segunda parte (la información) (páginas opción 1,2,3)*/
+    background: url(../imagenes/opciones.jpg); 
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    left: 20%;
+    flex-direction: column;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    color: white;
+    font-family: 'Comic Boys';
+    text-align: center;
+    font-size: 30px;
+}
+.select{ /*Propiedades cajas select (páginas opción 1,3)*/
+    display: flex;
+    justify-content: space-evenly;
+}
+#selectDia, #selectMes, #selectPrimerSigno, #selectSegundoSigno{ /*Estilos cajas select (páginas opción 1,3)*/
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    border-bottom: 3px solid black;
+}
+.resultado{ /*Estilos cajas de salida (páginas opción 1,3)*/
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+}
+.calculaSigno{
+  font-size: 45px;
+  font-family: 'Spice Rice';
+  min-width: 300px;
+  min-height: 98px;
+  padding: 2% 2% 2% 2%;
+}
+.infoSigno{
+  font-size: 25px;
+  font-family:'Comic Boys';
+  min-width: 340px;
+  min-height: 195px;
+  max-width: 545px;
+  padding: 2% 2% 2% 2%;
+}
+
+.infoSigno, .calculaSigno {
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background: rgb(228,100,100);
+  background: linear-gradient(170deg, rgba(228,100,100,0.7081578286846033) 50%, rgba(196,196,196,0.639093137254902) 76%);
+} 
+
+/*--------------Estilos página ¿cómo es mi signo? (opción 2)--------------*/
+.opDos{
+  height: auto;
+}
+.cards, .infoCards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards img{
+    width: 150px;
+    height: auto;
+}
+button { /*Estilos botones*/
+  width: 145px;
+  height: auto;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-family: 'Comic Boys';
+}
+.botonesop2{
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3px;
+}
+.open-modal {
+  font-weight: bold;
+  background: #C4C4C4;
+  color: #7704E9;
+  padding: 0.75rem 1.75rem;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+.modal { /*––––––Estilos modal–––––– */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../imagenes/pr.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+.modal.is-visible { /*––––––Modal visible–––––– */
+  visibility: visible;
+  opacity: 1;
+}
+.modal-dialog { /*––––––Estilos contenido del–––––– */
+  position: relative;
+  max-width: 650px;
+  max-height: 100vh;
+  border-radius: 5px;
+  background: rgb(228,100,100);
+  background: linear-gradient(170deg, rgba(228,100,100,0.7081578286846033) 50%, rgba(228,100,100,0.4132140084598841) 76%);
+  overflow: auto;
+  cursor: default;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #7704E9;
+  padding-left: 2%;
+  padding-right: 2%; 
+}
+.modal-header { /*Propiedades header del modal*/
+  padding-left: 85%;
+  height: 10px;
+}
+.close-modal {
+  font-size: 40px;
+  color: white;
+}
+
+.modal p + p {
+  margin-top: 1rem;
+}
+.page-footer { /*Estilos footer*/
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  height: 10px;
+}
+
+h5{
+    color: black;
+}
+/*--------------Estilos boton página ¿estaremos juntos? (opción 3)--------------*/
+.opTres img{
+    width: 100px;
+    height: auto;
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .mprincipal{ /*Menú página principal*/
+    width: 25%;
+  }
+  .mprincipal img{ /*Imagen menú página principal*/
+    width: 70px;
+  }
+  .pagprincipal{ /*Página principal*/
+    font-size: 30px;
+    left: 29.5%;
+  }
+  .box { /*Caja página principal*/
+      width: 440px;
+      height: 260px;
+  }
+  .menulat{ /*Menú página opción 1,2 y 3*/
+      width: 50%;
+  }
+  .botones{ /*Botones menú página opción 1, 2 y 3*/
+      width: 130px;
+      height: 80px;
+      font-size: 20px;
+      font-weight: 300;
+  }   
+  .cards img{ /*Cartas página opción 2*/
+      width: 100px;
+      height: auto;
+  }
+  button { /*Estilos botones página opción 2*/
+    width: 105px;
+    height: auto;
+    font-size: 12px;
+  }
+}
